@@ -4,29 +4,36 @@
   <meta charset="UTF-8">
   <title>تركيب مظلات وسواتر</title>
   <style>
-.intro-text {.contact-btn, .whatsapp-btn {
-  position: fixed;
-  bottom: 20px;
-  width: 55px;
-  height: 55px;
-  font-size: 28px;
-  color: white;
-  background-color: #25D366;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 55px;
-  text-decoration: none;
-  z-index: 999;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  transition: background 0.3s;
-}
 
-.contact-btn {
-  right: 20px;
-  background-color: #0a66c2; /* أزرق */
-}
+.whatsapp-btn {<style>
+    .contact-btn {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-color: #0a66c2; /* لون زر الاتصال */
+        color: white;
+        padding: 10px 15px;
+        border-radius: 50px;
+        font-size: 18px;
+        text-decoration: none;
+    }
 
-.whatsapp-btn {
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25D366; /* لون زر واتساب */
+        color: white;
+        padding: 10px 15px;
+        border-radius: 50px;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .contact-btn:hover, .whatsapp-btn:hover {
+        opacity: 0.8;
+    }
+</style>
   left: 20px;
   background-color: #25D366; /* أخضر */
 }
