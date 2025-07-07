@@ -4,8 +4,70 @@
   <meta charset="UTF-8">
   <title>تركيب مظلات وسواتر</title>
   <style>
+  .hero-header {
+  background-image: url('IMG-20250706-WA0126.jpg'); /* غيّر إلى صورة الخلفية المناسبة */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-header .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* لون خلفية داكن شفاف فوق الصورة */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.hero-header h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.hero-header .subtitle {
+  font-size: 20px;
+  color: #ffce54;
+  margin-bottom: 10px;
+}
+
+.hero-header .subtext {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero-header .buttons .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.hero-header .buttons .btn:hover {
+  background-color: #0056b3;
+}  
 <style>
   body {
+<header class="hero-header">
+  <div class="overlay">
+    <h1>مظلات وسواتر عالية الجودة</h1>
+    <p class="subtitle">حلول تظليل مبتكرة بجودة عالية وأسعار تنافسية</p>
+    <p class="subtext">نقدم أفضل خدمات تركيب المظلات والسواتر مع خبرة تزيد عن 15 عامًا في المجال</p>
+    <div class="buttons">
+      <a href="#" class="btn">احصل على عرض سعر</a>
+      <a href="#" class="btn">شاهد أعمالنا</a>
+    </div>
+  </div>
+</header>
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f8f8f8;
