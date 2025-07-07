@@ -4,7 +4,37 @@
   <meta charset="UTF-8">
   <title>تركيب مظلات وسواتر</title>
   <style>
-.intro-text {
+.intro-text {.contact-btn, .whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  width: 55px;
+  height: 55px;
+  font-size: 28px;
+  color: white;
+  background-color: #25D366;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 55px;
+  text-decoration: none;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+}
+
+.contact-btn {
+  right: 20px;
+  background-color: #0a66c2; /* أزرق */
+}
+
+.whatsapp-btn {
+  left: 20px;
+  background-color: #25D366; /* أخضر */
+}
+
+.contact-btn:hover,
+.whatsapp-btn:hover {
+  opacity: 0.8;
+}
     font-size: 26px;
     font-weight: bold;
     color: #333;
@@ -82,5 +112,13 @@
     <a class="whatsapp" href="https://wa.me/966534823338" target="_blank">راسلنا على واتساب</a>
   </div>
 
-</body>
+</body><!-- زر الاتصال على اليمين -->
+<a href="tel:534823338" class="contact-btn" title="اتصال">
+  📞
+</a>
+
+<!-- زر الواتساب على اليسار -->
+<a href="https://wa.me/966534823338" class="whatsapp-btn" target="_blank" title="واتساب">
+  💬
+</a>
 </html>
