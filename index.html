@@ -2,6 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
  <style>
+  
   body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -66,7 +67,43 @@
   .call-button:hover,
   .whatsapp-button:hover {
     transform: scale(1.1);
-  }
+  transform: scale(1.1);
+}
+
+/* 🔽 هنا تضع كود الأزرار الجديد */
+
+.call-button,
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  width: 55px;
+  height: 55px;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.3s;
+  text-decoration: none;
+}
+
+.call-button {
+  right: 20px;
+  background-color: #0a66c2;
+}
+
+.whatsapp-button {
+  left: 20px;
+  background-color: #25D366;
+}
+
+.call-button:hover,
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
 </style>
 
 </head>
@@ -118,11 +155,6 @@
     <img src="IMG-20250706-WA0093.jpg" alt="صورة 30">
   </div>
 
-  <!-- أزرار الاتصال والواتساب -->
-  <div class="floating-buttons">
-    <a href="tel:0534823338" class="call-button">📞</a>
-    <a href="https://wa.me/966534823338" class="whatsapp-button">💬</a>
-  </div>
 </body>
 </div>
 <!-- وصف مظلات الحديد -->
@@ -139,18 +171,10 @@
     هي عبارة عن مظلات واير يتم تجهيزها في ورش التصنيع بجميع الأحجام والأنواع وتكون مدهونة بالفرن الحراري. عند طلبك لهذا النوع من المظلات، يتم توريدها وتركيبها بأسرع وقت وفي مدة لا تتعدى ساعتين. وتُعتبر سهلة التركيب حيث لا تحتاج إلى دهان أو لحام عند تركيبها في المكان المطلوب.
   </p>
 </div>
-  <div class="contact">
-    <p>للتواصل عبر واتساب مباشرة:</p>
-    <a class="whatsapp" href="https://wa.me/966534823338" target="_blank">راسلنا على واتساب</a>
-  </div>
-
+ 
+<!-- أزرار التواصل الثابتة -->
+<a href="tel:966534823338" class="call-button" title="اتصل الآن">📞</a>
+<a href="https://wa.me/966534823338" class="whatsapp-button" title="تواصل واتساب" target="_blank">💬</a>
 </body><!-- زر الاتصال على اليمين -->
-<a href="tel:534823338" class="contact-btn" title="اتصال">
-  📞
-</a>
 
-<!-- زر الواتساب على اليسار -->
-<a href="https://wa.me/966534823338" class="whatsapp-btn" target="_blank" title="واتساب">
-  💬
-</a>
 </html>
