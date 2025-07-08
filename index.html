@@ -4,14 +4,23 @@
   <meta charset="UTF-8">
   <title>تركيب مظلات وسواتر</title>
   <style>
-   .services-container {
+.services {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  text-align: right;
-  margin: 40px auto;
+  justify-content: space-around; /* توزيع المساحة بالتساوي */
+  flex-wrap: wrap; /* يسمح بانتقال العناصر للسطر الثاني عند الحاجة */
+  gap: 20px; /* مسافة بين العناصر */
   max-width: 1200px;
+  margin: 40px auto;
   padding: 20px;
+}
+
+.service-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px; /* عرض البطاقة */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: right;
 }
 
 .service-box {
