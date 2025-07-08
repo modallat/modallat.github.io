@@ -244,40 +244,87 @@
     <!-- أضف المزيد حسب الصور المتوفرة -->
   </div>
  <div class="item">
- <section class="services">
+style>
+  .services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: right;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+
+  .service-box {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 15px;
+    text-align: center;
+  }
+
+  .service-box img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 50%;
+  }
+
+  .service-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .service-box ul {
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .service-box ul li::before {
+    content: "✓";
+    color: green;
+    margin-left: 5px;
+  }
+</style>
+
+<section class="services">
   <div class="service-box">
-    <div class="icon">🚗</div>
+    <img src="car.jpg" alt="مظلات السيارات">
     <h3>مظلات السيارات</h3>
     <ul>
       <li>مظلات حديد وقماش بتصاميم عصرية</li>
-      <li>مظلات جديدة مقاومة للصدأ</li>
-      <li>مظلات قماش عالية الجودة</li>
-      <li>مظلات لكامل المواقف</li>
-      <li>مظلات شمسية شفافة</li>
-      <li>مظلات متحركة بريموت كنترول</li>
+      <li>مظلات مقاومة للصدأ</li>
+      <li>قماش عالي الجودة</li>
+      <li>مظلات للمواقف</li>
+      <li>مظلات شفافة</li>
+      <li>مظلات بريموت كنترول</li>
     </ul>
   </div>
 
   <div class="service-box">
-    <div class="icon">🧱</div>
+    <img src="sater.jpg" alt="السواتر">
     <h3>السواتر</h3>
     <ul>
       <li>سواتر حديد مجلفن</li>
-      <li>سواتر خشبية طبيعية</li>
-      <li>سواتر قماش PVC للعزل</li>
-      <li>سواتر ألمنيوم بتصاميم متميزة</li>
+      <li>سواتر خشب طبيعية</li>
+      <li>سواتر قماش PVC</li>
+      <li>سواتر ألمنيوم مميزة</li>
     </ul>
   </div>
 
   <div class="service-box">
-    <div class="icon">🪑</div>
+    <img src="pergola.jpg" alt="البرجولات">
     <h3>البرجولات</h3>
     <ul>
-      <li>برجولات خشبية وحديد لإضافة لمسة جمالية للحدائق</li>
+      <li>برجولات خشب وحديد للحدائق</li>
       <li>برجولات خشبية فاخرة</li>
-      <li>برجولات حديد مودرن</li>
-      <li>جلسات خارجية مريحة</li>
-      <li>تصاميم مخصصة حسب الطلب</li>
+      <li>برجولات مودرن</li>
+      <li>جلسات خارجية</li>
+      <li>تصميم حسب الطلب</li>
     </ul>
   </div>
 </section>
