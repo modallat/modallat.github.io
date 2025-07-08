@@ -4,6 +4,58 @@
   <meta charset="UTF-8">
   <title>تركيب مظلات وسواتر</title>
   <style>
+   .services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: right;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.service-box {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 300px;
+  margin: 15px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service-box img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+.service-box h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service-box ul {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.service-box ul li {
+  list-style: none;
+  position: relative;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+.service-box ul li::before {
+  content: "✔";
+  position: absolute;
+  right: 0;
+  color: green;
+  margin-left: 5px;
+} 
   .hero-header {
   background-image: url('IMG-20250706-WA0126.jpg'); /* غيّر إلى صورة الخلفية المناسبة */
   background-size: cover;
@@ -200,6 +252,59 @@
       color: #444;
     }
   </style>
+  .services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: right;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.service-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 300px;
+  margin: 15px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-box img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.service-box h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.service-box ul {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.service-box ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  position: relative;
+  padding-right: 20px;
+}
+
+.service-box ul li::before {
+  content: "✔";
+  color: green;
+  position: absolute;
+  right: 0;
+}
 </head>
 <body>
 <body>
@@ -209,7 +314,48 @@
     إذا كنت تبحث عن شركة متخصصة في مجال المظلات والسواتر بكافة أنواعها وأشكالها؛ الحديد، الخشب، البلاستيك، وغيرها من الأنواع المتوفرة في الأسواق السعودية،
     نحن في الخدمة ونتميز بأسعار ممتازة وجودة عالية في التنفيذ والعمل.
   </p>
+<div class="services-container">
 
+  <!-- مظلات السيارات -->
+  <div class="service-box">
+    <img src="IMG-20250706-WA0093.jpg" alt="مظلات سيارات">
+    <h3>مظلات السيارات</h3>
+    <ul>
+      <li>مظلات حديد وقماش بتصاميم عصرية</li>
+      <li>مظلات جديدة مقاومة للصدأ</li>
+      <li>مظلات قماش عالية الجودة</li>
+      <li>مظلات لكامل المواقف</li>
+      <li>مظلات شمسية شفافة</li>
+      <li>مظلات متحركة بريموت كنترول</li>
+    </ul>
+  </div>
+
+  <!-- السواتر -->
+  <div class="service-box">
+    <img src="IMG-20250706-WA0094.jpg" alt="السواتر">
+    <h3>السواتر</h3>
+    <ul>
+      <li>سواتر حديد مجلفن</li>
+      <li>سواتر خشبية طبيعية</li>
+      <li>سواتر قماش PVC للعزل</li>
+      <li>سواتر الألمنيوم بتصاميم مميزة</li>
+    </ul>
+  </div>
+
+  <!-- البرجولات -->
+  <div class="service-box">
+    <img src="IMG-20250706-WA0095.jpg" alt="البرجولات">
+    <h3>البرجولات</h3>
+    <ul>
+      <li>برجولات خشب وحديد لإضافة لمسة جمالية للحدائق</li>
+      <li>برجولات خشبية فاخرة</li>
+      <li>برجولات حديد مودرن</li>
+      <li>جلسات خارجية مريحة</li>
+      <li>تصاميم مخصصة حسب الطلب</li>
+    </ul>
+  </div>
+
+</div>
   <div class="gallery">
     <img src="IMG-20250706-WA0126.jpg" alt="مظلة 1">
     <img src="IMG-20250706-WA0128.jpg" alt="مظلة 2">
